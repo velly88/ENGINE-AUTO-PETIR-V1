@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAXWIN ENGINE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <header>
+            <h1>ENGINE MAXWIN V1</h1>
+            <p>Isi username, aktifkan, lalu daftarkan ke website yang sudah kami tuju</p>
+        </header>
+        <main>
+            <form id="topup-form">
+                <div class="form-group">
+                    <label for="username">Username Game <span>*</span></label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan username Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="topup">Pilih Fitur<span>*</span></label>
+                    <select id="topup" name="topup" required>
+                        <option value="" disabled selected>Pilih jumlah...</option>
+                        <option value="50">50 PETIR</option>
+                        <option value="100">100 PETIR</option>
+                        <option value="250">250 PETIR</option>
+                        <option value="500">500 PETIR</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Top-Up Sekarang</button>
+                </div>
+            </form>
+        </main>
+        <div class="loader" id="loader">
+            <p>Processing your username...</p>
+            <div class="spinner"></div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Mgabpepe88 | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
